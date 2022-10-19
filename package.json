@@ -1,0 +1,19 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Henry's site",
+  "main": "index.js",
+  "repository": "git@github.com:haovei/site.git",
+  "author": "Henry <haovei@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "1.0.0-alpha.21",
+    "vue": "^3.2.40"
+  },
+  "dependencies": {}
+}
