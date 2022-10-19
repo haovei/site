@@ -4,7 +4,7 @@ title: Home
 
 hero:
   text: Henry's Site
-  tagline: 记录学习、生活、工作的点点滴滴
+  tagline: Hope the coding makes the world a better place.
 
 features:
   - icon: 💻

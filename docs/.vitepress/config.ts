@@ -23,6 +23,26 @@ export default defineConfig({
         href: '/favicon.png',
       },
     ],
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-S00QCBQG59',
+      },
+    ],
+    [
+      'script',
+      {},
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-S00QCBQG59');",
+    ],
+    [
+      'script',
+      {
+        async: true,
+        'custom-element': 'amp-ad',
+        src: 'https://cdn.ampproject.org/v0/amp-ad-0.1.js',
+      },
+    ],
   ],
   themeConfig: {
     nav,
