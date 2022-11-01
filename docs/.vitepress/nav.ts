@@ -3,13 +3,13 @@ export default [
     text: 'Technology',
     link: '/technology/',
   },
+  {
+    text: 'Accumulation',
+    link: '/accumulation/',
+  },
   // {
-  //   text: 'Learning',
-  //   link: '/learning/',
-  // },
-  // {
-  //   text: 'Interest',
-  //   link: '/interest/',
+  //   text: 'Interesting',
+  //   link: '/interesting/',
   // },
   // {
   //   text: 'Travel',
