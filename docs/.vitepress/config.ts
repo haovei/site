@@ -47,21 +47,16 @@ export default defineConfig({
   themeConfig: {
     nav,
     sidebar,
-
     outlineTitle: '大纲',
-
     editLink: {
       pattern: 'https://github.com/haovei/site/edit/main/docs/:path',
       text: '编辑页面',
     },
-
     socialLinks: [{ icon: 'github', link: 'https://github.com/haovei/site' }],
-
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2020-present Henry',
     },
-
     algolia: {
       appId: 'IMN8M7G4B1',
       apiKey: 'bb02b33592205ba83503042cb672fdd6',

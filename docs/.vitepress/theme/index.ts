@@ -1,5 +1,6 @@
 import { h } from 'vue';
 import Theme from 'vitepress/theme';
+import './styles/vars.css';
 import AsideSponsors from './components/AsideAds.vue';
 
 export default {
