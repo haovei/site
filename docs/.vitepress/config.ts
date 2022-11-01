@@ -7,12 +7,10 @@ export default defineConfig({
   title: 'Henry Site',
   description: 'Henry site, 记录学习、生活、工作的点点滴滴',
   lastUpdated: true,
-  cleanUrls: 'without-subfolders',
+  cleanUrls: 'with-subfolders',
 
   markdown: {
-    headers: {
-      level: [0, 0],
-    },
+    headers: {},
     externalLinks: { target: '_blank', rel: 'nofollow noopener noreferrer' },
   },
   head: [
