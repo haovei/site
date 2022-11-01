@@ -10,7 +10,11 @@
 </template>
 
 <script>
-(window.adsbygoogle = window.adsbygoogle || []).push({});
+export default {
+  mounted() {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  },
+};
 </script>
 
 <style scoped>
