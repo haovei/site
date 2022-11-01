@@ -7,7 +7,7 @@ export default defineConfig({
   title: 'Henry Site',
   description: 'Henry site, 记录学习、生活、工作的点点滴滴',
   lastUpdated: true,
-  cleanUrls: 'with-subfolders',
+  cleanUrls: 'without-subfolders',
 
   markdown: {
     headers: {},
@@ -45,7 +45,7 @@ export default defineConfig({
   themeConfig: {
     nav,
     sidebar,
-    outlineTitle: '大纲',
+    outlineTitle: '目录',
     editLink: {
       pattern: 'https://github.com/haovei/site/edit/main/docs/:path',
       text: '编辑页面',
