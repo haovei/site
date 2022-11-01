@@ -6,7 +6,7 @@ export default {
       items: [
         {
           text: 'H5 定位权限测试',
-          link: '/technology/front-end/h5-geo-test/',
+          link: '/technology/front-end/h5-geo-test',
         },
       ],
     },
@@ -16,7 +16,7 @@ export default {
       items: [
         {
           text: 'VPN 分流',
-          link: '/technology/network/vpn-shunt/',
+          link: '/technology/network/vpn-shunt',
         },
       ],
     },
@@ -27,19 +27,19 @@ export default {
       items: [
         {
           text: '代码质量评价标准',
-          link: '/accumulation/code-quality-standard/',
+          link: '/accumulation/code-quality-standard',
         },
         {
           text: '好代码与坏代码',
-          link: '/accumulation/good-bad-code/',
+          link: '/accumulation/good-bad-code',
         },
         {
           text: '前端技术架构与工程',
-          link: '/accumulation/front-end-architecture/',
+          link: '/accumulation/front-end-architecture',
         },
         {
           text: '架构师职责',
-          link: '/accumulation/front-end-architect/',
+          link: '/accumulation/front-end-architect',
         },
       ],
     },
