@@ -1,29 +1,20 @@
 export default {
-  '/front-end/': [
+  '/technology/': [
+    // {
+    //   text: 'Front End',
+    //   items: [
+    //     {
+    //       text: 'test',
+    //       link: '/technology/front-end/',
+    //     },
+    //   ],
+    // },
     {
-      text: 'Front End',
+      text: 'Network',
       items: [
         {
-          text: 'test',
-          // link: '/front-end/index.md',
-          items: [
-            {
-              text: 'test2',
-              link: '/front-end/index.md',
-              items: [
-                {
-                  text: 'test2',
-                  link: '/front-end/index.md',
-                  items: [
-                    {
-                      text: 'test4',
-                      link: '/front-end/index.md',
-                    },
-                  ]
-                },
-              ]
-            },
-          ]
+          text: 'VPN 分流',
+          link: '/technology/network/vpn-shunt/',
         },
       ],
     },

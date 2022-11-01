@@ -1,7 +1,7 @@
 export default [
   {
-    text: 'Front End',
-    link: '/front-end/',
+    text: 'Technology',
+    link: '/technology/',
   },
   // {
   //   text: 'Learning',
