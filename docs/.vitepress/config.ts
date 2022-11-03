@@ -15,6 +15,13 @@ export default defineConfig({
   },
   head: [
     [
+      'meta',
+      {
+        name: 'google-site-verification',
+        content: 'bkegPWC_-AnL3FOHLNrmtuyUxO_es7P6dWaz4qPhkag',
+      },
+    ],
+    [
       'link',
       {
         rel: 'icon',
