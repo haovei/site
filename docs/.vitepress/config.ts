@@ -33,14 +33,14 @@ export default defineConfig({
       {},
       "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-S00QCBQG59');",
     ],
-    [
-      'script',
-      {
-        async: true,
-        crossorigin: 'anonymous',
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3811876010675991',
-      },
-    ],
+    // [
+    //   'script',
+    //   {
+    //     async: true,
+    //     crossorigin: 'anonymous',
+    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3811876010675991',
+    //   },
+    // ],
   ],
   themeConfig: {
     nav,
