@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { VitePWA } from 'vite-plugin-pwa';
 import nav from './nav';
 import sidebar from './sidebar';
 
@@ -8,6 +9,10 @@ export default defineConfig({
   description: 'Henry site, 记录学习、生活、工作的点点滴滴',
   lastUpdated: true,
   cleanUrls: 'without-subfolders',
+
+  plugins: [
+    VitePWA({ registerType: 'autoUpdate' })
+  ],
 
   markdown: {
     headers: {},
