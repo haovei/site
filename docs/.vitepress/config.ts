@@ -8,7 +8,7 @@ export default defineConfig({
   title: 'Henry Site',
   description: 'Henry site, 记录学习、生活、工作的点点滴滴',
   lastUpdated: true,
-  cleanUrls: 'without-subfolders',
+  cleanUrls: true,
 
   plugins: [
     VitePWA({ registerType: 'autoUpdate' })
