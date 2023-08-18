@@ -8,6 +8,10 @@ export default {
           text: 'H5 定位权限测试',
           link: '/technology/front-end/h5-geo-test',
         },
+        {
+          text: '用车导航线路乱窜',
+          link: '/technology/front-end/用车导航线路乱窜/',
+        },
       ],
     },
     {
