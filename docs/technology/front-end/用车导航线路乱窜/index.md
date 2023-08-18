@@ -4,7 +4,7 @@
 
 司机接单后，导航线路到处乱窜
 
-<img src="assets/1.png" width="400px" />
+<img src="./assets/1.png" width="400px" />
 
 ## 二、原因分析
 
@@ -12,12 +12,12 @@
 
 路线流程截图
 
-| <img src="assets/2.png" width="200px" /> | <img src="assets/3.png" width="200px" /> | <img src="assets/4.png" width="200px" /> | <img src="assets/5.png" width="200px" /> | <img src="assets/6.png" width="200px" /> |
+| <img src="./assets/2.png" width="200px" /> | <img src="./assets/3.png" width="200px" /> | <img src="./assets/4.png" width="200px" /> | <img src="./assets/5.png" width="200px" /> | <img src="./assets/6.png" width="200px" /> |
 | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
 
 当司机在四字路口时，`driving.search` 并不知道此时司机在哪条路，往那个方向，桥上还是桥下
 
-<img src="assets/7.png" width="400px" />
+<img src="./assets/7.png" width="400px" />
 
 获取的线路就会变化，表现出来就是线路乱窜。同样情况，还会出现主道、辅道的差别
 
@@ -25,7 +25,7 @@
 
 **思路**：不使用实时获取线路，采用初始位置路线
 
-![流程图](assets/flow.jpg)
+![流程图](./assets/flow.jpg)
 
 线路绘制规则：
 
@@ -36,7 +36,7 @@
 
 **如何判断司机是否在线路上？**
 
-![流程图](assets/flow_2.jpg)
+![流程图](./assets/flow_2.jpg)
 
 1. 判断 P1 是否在线路上（`isPointOnLine`），如果不在，重新获取线路
 2. 找到线路上离 P1 最近的点 P2（映射点）`closestOnLine`
