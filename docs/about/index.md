@@ -16,8 +16,8 @@ I am passionate about helping others by writing and sharing code, and I believe 
 
 ### WeChat
 
-![微信 wechat](./assets/wechat.png)
+<img src="./assets/wechat.png" width="400" height="400" alt="微信 wechat" />
 
 ### Alipay
 
-![支付宝 alipay](./assets/alipay.png)
+<img src="./assets/alipay.png" width="400" height="400" alt="支付宝 alipay" />
