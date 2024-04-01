@@ -16,8 +16,12 @@ I am passionate about helping others by writing and sharing code, and I believe 
 
 ### WeChat
 
-<img src="./assets/wechat.png" width="400" height="400" alt="微信 wechat" />
+<img src="./assets/wechat.png" width="200" alt="微信 wechat" />
 
 ### Alipay
 
-<img src="./assets/alipay.png" width="400" height="400" alt="支付宝 alipay" />
+<img src="./assets/alipay.png" width="200" alt="支付宝 alipay" />
+
+### Digital currency
+- BTC: bc1q2h45jt48frjdpkkyel65slug6fe3ra46kh8s30
+- ETH: 0x74999E3C14bcd0918F019197D31F6AB212b95018
