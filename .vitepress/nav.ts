@@ -3,10 +3,10 @@ export default [
         text: 'Technology',
         link: '/technology/',
     },
-    {
-        text: 'Accumulation',
-        link: '/accumulation/',
-    },
+    // {
+    //     text: 'Accumulation',
+    //     link: '/accumulation/',
+    // },
     // {
     //   text: 'Interesting',
     //   link: '/interesting/',

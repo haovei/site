@@ -6,11 +6,11 @@ settings:
 
 devDependencies:
   vite-plugin-pwa:
-    specifier: ^0.19.7
-    version: 0.19.7(vite@5.2.2)(workbox-build@7.0.0)(workbox-window@7.0.0)
+    specifier: ^0.19.8
+    version: 0.19.8(vite@5.2.2)(workbox-build@7.0.0)(workbox-window@7.0.0)
   vitepress:
-    specifier: ^1.0.1
-    version: 1.0.1(@algolia/client-search@4.22.1)(search-insights@2.7.0)
+    specifier: ^1.0.2
+    version: 1.0.2(@algolia/client-search@4.22.1)(search-insights@2.7.0)
   vue:
     specifier: ^3.4.21
     version: 3.4.21
@@ -3474,8 +3474,8 @@ packages:
       punycode: 2.3.0
     dev: true
 
-  /vite-plugin-pwa@0.19.7(vite@5.2.2)(workbox-build@7.0.0)(workbox-window@7.0.0):
-    resolution: {integrity: sha512-18TECxoGPQE7tVZzKxbf5Icrl5688n1JGMPSgGotTsh89vLDxevY7ICfD3CFVfonZXh8ckuyJXg0NXE5+FAl2A==}
+  /vite-plugin-pwa@0.19.8(vite@5.2.2)(workbox-build@7.0.0)(workbox-window@7.0.0):
+    resolution: {integrity: sha512-e1oK0dfhzhDhY3VBuML6c0h8Xfx6EkOVYqolj7g+u8eRfdauZe5RLteCIA/c5gH0CBQ0CNFAuv/AFTx4Z7IXTw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@vite-pwa/assets-generator': ^0.2.4
@@ -3531,8 +3531,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress@1.0.1(@algolia/client-search@4.22.1)(search-insights@2.7.0):
-    resolution: {integrity: sha512-eNr5pOBppYUUjEhv8S0S2t9Tv95LQ6mMeHj6ivaGwfHxpov70Vduuwl/QQMDRznKDSaP0WKV7a82Pb4JVOaqEw==}
+  /vitepress@1.0.2(@algolia/client-search@4.22.1)(search-insights@2.7.0):
+    resolution: {integrity: sha512-bEj9yTEdWyewJFOhEREZF+mXuAgOq27etuJZT6DZSp+J3XpQstXMJc5piSVwhZBtuj8OfA0iXy+jdP1c71KMYQ==}
     hasBin: true
     peerDependencies:
       markdown-it-mathjax3: ^4
