@@ -7,7 +7,7 @@ export default {
     ...Theme,
     Layout() {
         return h(Theme.Layout, null, {
-            'aside-ads-before': () => h(AsideSponsors),
+            // 'aside-ads-before': () => h(AsideSponsors),
         });
     },
 };

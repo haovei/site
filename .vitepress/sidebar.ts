@@ -1,51 +1,51 @@
 export default {
-  '/technology/': [
-    {
-      text: 'Front End',
-      collapsible: true,
-      items: [
+    '/technology/': [
         {
-          text: 'H5 定位权限测试',
-          link: '/technology/front-end/h5-geo-test',
+            text: 'Front End',
+            collapsible: true,
+            items: [
+                {
+                    text: 'H5 定位权限测试',
+                    link: '/technology/front-end/h5-geo-test',
+                },
+                {
+                    text: '用车导航线路乱窜',
+                    link: '/technology/front-end/用车导航线路乱窜/',
+                },
+            ],
         },
         {
-          text: '用车导航线路乱窜',
-          link: '/technology/front-end/用车导航线路乱窜/',
+            text: 'Network',
+            collapsible: true,
+            items: [
+                {
+                    text: 'VPN 分流',
+                    link: '/technology/network/vpn-shunt',
+                },
+            ],
         },
-      ],
-    },
-    {
-      text: 'Network',
-      collapsible: true,
-      items: [
+    ],
+    '/accumulation/': [
         {
-          text: 'VPN 分流',
-          link: '/technology/network/vpn-shunt',
+            text: '学习积累',
+            items: [
+                {
+                    text: '代码质量评价标准',
+                    link: '/accumulation/code-quality-standard',
+                },
+                {
+                    text: '好代码与坏代码',
+                    link: '/accumulation/good-bad-code',
+                },
+                {
+                    text: '前端技术架构与工程',
+                    link: '/accumulation/front-end-architecture',
+                },
+                {
+                    text: '架构师职责',
+                    link: '/accumulation/front-end-architect',
+                },
+            ],
         },
-      ],
-    },
-  ],
-  '/accumulation/': [
-    {
-      text: '学习积累',
-      items: [
-        {
-          text: '代码质量评价标准',
-          link: '/accumulation/code-quality-standard',
-        },
-        {
-          text: '好代码与坏代码',
-          link: '/accumulation/good-bad-code',
-        },
-        {
-          text: '前端技术架构与工程',
-          link: '/accumulation/front-end-architecture',
-        },
-        {
-          text: '架构师职责',
-          link: '/accumulation/front-end-architect',
-        },
-      ],
-    },
-  ],
+    ],
 };
