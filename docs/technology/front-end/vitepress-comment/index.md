@@ -1,3 +1,7 @@
+---
+description: 给 VitePress 添加评论功能
+---
+
 # 给 VitePress 添加评论功能
 
 VitePress 在生产静态站点时，快速且功能很强大，但作为静态站点，没有评论功能。网上有很多无后端评论系统，比如 Gitalk、Utterances 等，这些评论系统都是基于 GitHub Issue。Issue 本意是用来记录错误问题的，作为评论存储有点不妥。Giscus 受 Utterances 启发，利用 GitHub Discussions 实现的评论存储，更符合评论的本意。
@@ -101,7 +105,7 @@ export default {
 
 `VitePress` 很好的一个地方是有很多 `Slot`, `doc-after` 就是一个 `Slot`，用于在文档内容后插入内容。
 
-## 四. 结束
+## 四. 完成 🎉
 
 配置完就可以在 VitePress 文档中看到评论功能了。如下显示：
 
