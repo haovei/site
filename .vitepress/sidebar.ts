@@ -1,7 +1,7 @@
 export default {
-    '/technology/': [
+    '/technology/front-end/': [
         {
-            text: 'Front End',
+            text: 'Web',
             collapsible: true,
             items: [
                 {
@@ -14,6 +14,8 @@ export default {
                 },
             ],
         },
+    ],
+    '/technology/network/': [
         {
             text: 'Network',
             collapsible: true,

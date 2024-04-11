@@ -1,7 +1,11 @@
 export default [
     {
-        text: 'Technology',
-        link: '/technology/',
+        text: 'Front End',
+        link: '/technology/front-end/',
+    },
+    {
+        text: 'Network',
+        link: '/technology/network/',
     },
     // {
     //     text: 'Accumulation',
