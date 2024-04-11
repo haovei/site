@@ -6,7 +6,7 @@ import sidebar from './sidebar';
 export default defineConfig({
     lang: 'zh-CN',
     title: 'Henry Site',
-    description: 'Henry site, 记录学习、生活、工作的一些事',
+    description: 'Henry site, 记录学习、生活、工作中技术相关的一些事',
     lastUpdated: true,
     cleanUrls: true,
     srcDir: 'docs',

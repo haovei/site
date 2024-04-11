@@ -10,7 +10,11 @@ export default {
                 },
                 {
                     text: '用车导航线路乱窜',
-                    link: '/technology/front-end/用车导航线路乱窜/',
+                    link: '/technology/front-end/navigation-lines-messy/',
+                },
+                {
+                    text: '给 Vitepress 添加评论功能',
+                    link: '/technology/front-end/vitepress-comment/',
                 },
             ],
         },
