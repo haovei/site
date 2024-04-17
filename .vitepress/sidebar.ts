@@ -5,6 +5,10 @@ export default {
             collapsible: true,
             items: [
                 {
+                    text: 'bun 运行时的 EACCES 错误',
+                    link: '/technology/front-end/bun-eacces',
+                },
+                {
                     text: 'H5 定位权限测试',
                     link: '/technology/front-end/h5-geo-test',
                 },
