@@ -7,6 +7,10 @@ export default [
         text: 'Network',
         link: '/technology/network/',
     },
+    {
+        text: 'Devops',
+        link: '/technology/devops/',
+    },
     // {
     //     text: 'Accumulation',
     //     link: '/accumulation/',

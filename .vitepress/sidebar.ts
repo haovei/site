@@ -35,27 +35,39 @@ export default {
             ],
         },
     ],
-    '/accumulation/': [
+    '/technology/devops/': [
         {
-            text: '学习积累',
+            text: 'Devops',
+            collapsible: true,
             items: [
                 {
-                    text: '代码质量评价标准',
-                    link: '/accumulation/code-quality-standard',
-                },
-                {
-                    text: '好代码与坏代码',
-                    link: '/accumulation/good-bad-code',
-                },
-                {
-                    text: '前端技术架构与工程',
-                    link: '/accumulation/front-end-architecture',
-                },
-                {
-                    text: '架构师职责',
-                    link: '/accumulation/front-end-architect',
-                },
-            ],
-        },
+                    text: '轻量服务部署 Docker Swarm',
+                    link: '/technology/devops/docker-swarm-deploy',
+                }
+            ]
+        }
     ],
+    // '/accumulation/': [
+    //     {
+    //         text: '学习积累',
+    //         items: [
+    //             {
+    //                 text: '代码质量评价标准',
+    //                 link: '/accumulation/code-quality-standard',
+    //             },
+    //             {
+    //                 text: '好代码与坏代码',
+    //                 link: '/accumulation/good-bad-code',
+    //             },
+    //             {
+    //                 text: '前端技术架构与工程',
+    //                 link: '/accumulation/front-end-architecture',
+    //             },
+    //             {
+    //                 text: '架构师职责',
+    //                 link: '/accumulation/front-end-architect',
+    //             },
+    //         ],
+    //     },
+    // ],
 };

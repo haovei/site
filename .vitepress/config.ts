@@ -52,6 +52,7 @@ export default defineConfig({
         nav,
         sidebar,
         outlineTitle: '目录',
+        outline: 'deep',
         editLink: {
             pattern: 'https://github.com/haovei/site/edit/main/docs/:path',
             text: '编辑页面',
