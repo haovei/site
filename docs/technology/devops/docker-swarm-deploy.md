@@ -123,12 +123,13 @@ services:
 docker stack deploy -c docker-compose.yml web
 ```
 
-::: tip 注意
+::: tip ⚠️ 注意
 `Docker Compose` 和 `Docker Stack` 都使用 `docker-compose.yml` 文件来定义服务，但是它们之间存在一些关键的差异。主要区别在于 `Docker Compose` 用于在单个主机上运行多个容器，而 `Docker Stack` 用于在多个主机上运行多个容器。
 :::
 
-**多服务部署**
-
+::: warning ⚠️ 注意
+`docker stack` 使用 `docker-compose.yml` 不支持依赖，`depends_on` 不会生效。如果需要依赖，只可以使用 `docker-compose` 来部署。
+:::
 
 ## 扩容
 
