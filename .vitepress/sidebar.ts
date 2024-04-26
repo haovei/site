@@ -29,6 +29,10 @@ export default {
             collapsible: true,
             items: [
                 {
+                    text: 'HTTP 的一些知识点梳理',
+                    link: '/technology/network/http-questions',
+                },
+                {
                     text: 'VPN 分流',
                     link: '/technology/network/vpn-shunt',
                 },
@@ -43,9 +47,9 @@ export default {
                 {
                     text: '轻量服务部署 Docker Swarm',
                     link: '/technology/devops/docker-swarm-deploy',
-                }
-            ]
-        }
+                },
+            ],
+        },
     ],
     // '/accumulation/': [
     //     {
