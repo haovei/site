@@ -1,3 +1,7 @@
+---
+description: HTTP/3 在弱网环境下可能会出现 `net::ERR_QUIC_PROTOCOL_ERROR` 错误，主要原因是运营商网络对 UDP 的限制。
+---
+
 # HTTP/3 QUIC 网络错误
 
 ## 背景

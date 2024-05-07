@@ -29,6 +29,10 @@ export default {
             collapsible: true,
             items: [
                 {
+                    text: 'HTTP/3 QUIC 网络错误',
+                    link: '/technology/network/http3-quic-error',
+                },
+                {
                     text: 'HTTP 的一些知识点梳理',
                     link: '/technology/network/http-questions',
                 },
