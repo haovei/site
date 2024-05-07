@@ -25,7 +25,7 @@ nginx 1.26 稳定版正式发布，升级的主要功能是支持 HTTP/3，第�
 电信限速，就换个网络环境，用移动的网络测试了下
 ![移动网络测试](assets/quic-2.png)
 
-移动网络没有限速，在 Chrome 里手动限速为 `Slow 3G`，只有一个大文件在 1.2min 时报了 `net::ERR_QUIC_PROTOCOL_ERROR` 错误。排除了 QUIC 超时配置问题
+移动网络没有限速，在 Chrome 里手动限速为 `Slow 3G`，只有一个大文件在 1.2min 时报了 `net::ERR_QUIC_PROTOCOL_ERROR` 错误。
 
 同一服务器，不同运营商网络表现差异明显。
 
@@ -36,6 +36,10 @@ nginx 1.26 稳定版正式发布，升级的主要功能是支持 HTTP/3，第�
 关闭 QUIC，使用 HTTP/2 协议，没有出现错误，页面正常加载。即使 3.1min 的加载都能正常访问。排除无线网络的稳定性问题
 
 看来主要原因是 HTTP/2 和 HTTP/3 的差异导致的问题，底层是 TCP 和 UDP 的差异，大概率是运营商会通过 QoS 策略限制 UDP 流量
+
+::: tip 注意
+关于有个文件在 1.2min 左右超时问题，在有线宽带下 `Slow 3G` 测试也同样出现，能稳定复现。 nginx 官方文档 `quic_timeout` 没设置时，默认取 `keepalive_timeout` 值，`keepalive_timeout` 的默认值是 75s，和 1.2min 这个时间点接近。但 nginx 1.26 版本没有了 `quic_timeout` 配置，通过修改 `keepalive_timeout` 时间也无效。怀疑这个问题是 nginx 的 QUIC 超时配置的 bug。
+:::
 
 ## 验证问题
 
