@@ -38,7 +38,13 @@ nginx 1.26 稳定版正式发布，升级的主要功能是支持 HTTP/3，第�
 看来主要原因是 HTTP/2 和 HTTP/3 的差异导致的问题，底层是 TCP 和 UDP 的差异，大概率是运营商会通过 QoS 策略限制 UDP 流量
 
 ::: tip 注意
-关于有个文件在 1.2min 左右超时问题，在有线宽带下 `Slow 3G` 测试也同样出现，能稳定复现。 nginx 官方文档 `quic_timeout` 没设置时，默认取 `keepalive_timeout` 值，`keepalive_timeout` 的默认值是 75s，和 1.2min 这个时间点接近。但 nginx 1.26 版本没有了 `quic_timeout` 配置，通过修改 `keepalive_timeout` 时间也无效。怀疑这个问题是 nginx 的 QUIC 超时配置的 bug。
+关于有个文件在 1.2min 左右超时问题，在有线宽带下 `Slow 3G` 测试也同样出现，能稳定复现。 nginx 官方文档 `quic_timeout` 没设置时，默认取 `keepalive_timeout` 值，`keepalive_timeout` 的默认值是 75s，和 1.2min 这个时间点接近。但 nginx 1.26 版本没有了 `quic_timeout` 配置，通过修改 `keepalive_timeout` 时间也无效。~~怀疑这个问题是 nginx 的 QUIC 超时配置的 bug~~。
+:::
+
+::: tip 补充
+编译安装最新支持 HTTP/3 的 curl 进行多次限速测试，在 3min 左右出现 `curl: (55) connection closed by server` 错误，时间超过 Chrome 的 1.2min。
+下载 firefox 浏览器，选用 `Regular 2G` 限速，耗时 290s，没有出现错误。
+可以看出，**不同客户端对 HTTP/3 的超时时间等表现是不同的**，实际使用中，尽量不要用 HTTP/3 传输耗时长的文件。
 :::
 
 ## 验证问题
@@ -79,4 +85,4 @@ UDP 限速测试：
 
 HTTP/3 在低速网络环境，尤其是被限速的环境下，可能会出现 `net::ERR_QUIC_PROTOCOL_ERROR` 错误，主要原因是运营商网络对 UDP 的限制。
 在有网络限制或拥堵的情况下，QoS 策略优先保证 TCP 包，UDP 包在一定时间点后会有一定比例丢弃（电信 20s 后丢包率在 6%），导致 HTTP/3 在弱网下不稳定。
-实际生产环境，快速访问的小文件、后端接口可以使用 HTTP/3，大文件、视频等建议使用 HTTP/2，避免运营商的 QoS 限制。
+不同的客户端对 HTTP/3 的表现也不同。实际生产环境，快速访问的小文件、后端接口可以使用 HTTP/3，大文件、视频等建议使用 HTTP/2，避免运营商的 QoS 限制和客户端的超时。
