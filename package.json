@@ -15,9 +15,9 @@
         "deploy": "rsync -avz --delete ./dist/ quserver:/data/app/site/"
     },
     "devDependencies": {
-        "vite-plugin-pwa": "^0.19.8",
+        "vite-plugin-pwa": "^0.20.0",
         "vitepress": "^1.1.4",
-        "vue": "^3.4.26"
+        "vue": "^3.4.27"
     },
     "dependencies": {
         "@giscus/vue": "^3.0.0"
