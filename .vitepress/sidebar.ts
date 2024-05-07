@@ -5,8 +5,12 @@ export default {
             collapsible: true,
             items: [
                 {
-                    text: 'bun 运行时的 EACCES 错误',
+                    text: 'Bun 运行时的 EACCES 错误',
                     link: '/technology/front-end/bun-eacces',
+                },
+                {
+                    text: '给 Vitepress 添加评论功能',
+                    link: '/technology/front-end/vitepress-comment/',
                 },
                 {
                     text: 'H5 定位权限测试',
@@ -15,10 +19,6 @@ export default {
                 {
                     text: '用车导航线路乱窜',
                     link: '/technology/front-end/navigation-lines-messy/',
-                },
-                {
-                    text: '给 Vitepress 添加评论功能',
-                    link: '/technology/front-end/vitepress-comment/',
                 },
             ],
         },
