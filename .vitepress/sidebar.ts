@@ -49,6 +49,10 @@ export default {
             collapsible: true,
             items: [
                 {
+                    text: 'Nginx Brotli 模块配置',
+                    link: '/technology/devops/nginx-brotli-modules',
+                },
+                {
                     text: '轻量服务部署 Docker Swarm',
                     link: '/technology/devops/docker-swarm-deploy',
                 },
