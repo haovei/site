@@ -34,6 +34,8 @@ Nginx 更新到了 1.26 稳定版，主要增加 HTTP/3 功能的支持。
     -   [ngx_http_brotli_filter_module.so](https://site.quteam.com/download/quic-brotli/arm64/ngx_http_brotli_filter_module.so)
     -   [ngx_http_brotli_static_module.so](https://site.quteam.com/download/quic-brotli/arm64/ngx_http_brotli_static_module.so)
 
+**因不同环境，可能会报错，如果报错，使用上面的一键编译**
+
 :::
 
 复制文件到 nginx 模块目录`/usr/lib/nginx/modules`
