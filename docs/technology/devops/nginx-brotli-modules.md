@@ -16,7 +16,7 @@ Nginx 更新到了 1.26 稳定版，主要增加 HTTP/3 功能的支持。
 一键脚本编译
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://site.quteam.com/technology/devops/assets/build-nginx-brotli-modules.sh)"
+/bin/bash -c "$(curl -fsSL https://site.quteam.com/download/quic-brotli/build-nginx-brotli-modules.sh)"
 ```
 
 脚本自动运行，并编译两个模块文件:
@@ -27,12 +27,12 @@ Nginx 更新到了 1.26 稳定版，主要增加 HTTP/3 功能的支持。
 ::: tip 备注
 如果不想自己编译，这里提供编译好的文件，可以直接下载使用。
 
--   amd64
-    -   [ngx_http_brotli_filter_module.so](https://site.quteam.com/technology/devops/assets/amd64/ngx_http_brotli_filter_module.so)
-    -   [ngx_http_brotli_static_module.so](https://site.quteam.com/technology/devops/assets/amd64/ngx_http_brotli_static_module.so)
+-   x86_64
+    -   [ngx_http_brotli_filter_module.so](https://site.quteam.com/download/quic-brotli/x86_64/ngx_http_brotli_filter_module.so)
+    -   [ngx_http_brotli_static_module.so](https://site.quteam.com/download/quic-brotli/x86_64/ngx_http_brotli_static_module.so)
 -   arm64
-    -   [ngx_http_brotli_filter_module.so](https://site.quteam.com/technology/devops/assets/arm64/ngx_http_brotli_filter_module.so)
-    -   [ngx_http_brotli_static_module.so](https://site.quteam.com/technology/devops/assets/arm64/ngx_http_brotli_static_module.so)
+    -   [ngx_http_brotli_filter_module.so](https://site.quteam.com/download/quic-brotli/arm64/ngx_http_brotli_filter_module.so)
+    -   [ngx_http_brotli_static_module.so](https://site.quteam.com/download/quic-brotli/arm64/ngx_http_brotli_static_module.so)
 
 :::
 
