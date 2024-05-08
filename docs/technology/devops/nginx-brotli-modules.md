@@ -73,3 +73,15 @@ nginx -s reload
 ## 3. 效果
 
 ![quic + brotli 效果](assets/quic-brotli.png)
+
+## 4. 其他事项
+
+如果 nginx 使用的是 proxy_pass 反向代理，代理服务有自己的压缩方式时，需要在 `location` 去掉编码，否则会导致后端服务的压缩方式直接返回给浏览器。
+
+```nginx
+location / {
+    # ...
+    proxy_set_header Accept-Encoding "";
+    # ...
+}
+```
