@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 import { VitePWA } from 'vite-plugin-pwa';
 import nav from './nav';
 import sidebar from './sidebar';
+import { compression } from 'vite-plugin-compression2';
 
 export default defineConfig({
     lang: 'zh-CN',
@@ -11,7 +12,15 @@ export default defineConfig({
     cleanUrls: true,
     srcDir: 'docs',
     outDir: 'dist',
-    plugins: [VitePWA({ registerType: 'autoUpdate' })],
+    vite: {
+        plugins: [
+            VitePWA({ registerType: 'autoUpdate' }),
+            compression({
+                include: /\.(html|xml|css|json|js|mjs|woff2|svg)$/,
+                algorithm: 'brotliCompress',
+            }),
+        ],
+    },
     sitemap: {
         hostname: 'https://site.quteam.com',
     },
@@ -30,7 +39,7 @@ export default defineConfig({
         [
             'script',
             {
-                async: true,
+                async: '',
                 src: 'https://www.googletagmanager.com/gtag/js?id=G-S00QCBQG59',
             },
         ],
