@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress';
-import { VitePWA } from 'vite-plugin-pwa';
 import nav from './nav';
 import sidebar from './sidebar';
 import { compression } from 'vite-plugin-compression2';
+import imagemin from 'unplugin-imagemin/vite';
 
 export default defineConfig({
     lang: 'zh-CN',
@@ -14,10 +14,22 @@ export default defineConfig({
     outDir: 'dist',
     vite: {
         plugins: [
-            VitePWA({ registerType: 'autoUpdate' }),
             compression({
                 include: /\.(html|xml|css|json|js|mjs|woff2|svg)$/,
                 algorithm: 'brotliCompress',
+            }),
+            imagemin({
+                mode: 'squoosh',
+                beforeBundle: true,
+                compress: {
+                    webp: {
+                        quality: 90,
+                    },
+                },
+                conversion: [
+                    { from: 'png', to: 'webp' },
+                    { from: 'jpg', to: 'webp' },
+                ],
             }),
         ],
     },
