@@ -37,3 +37,28 @@ HTTP 是应用层协议，TCP 是传输层协议，HTTP 依赖于 TCP 来传输�
 -   对于客户端和服务端之间需要频繁交互的复杂场景，比如网页游戏，都可以考虑使用 WebSocket 协议。
 -   WebSocket 和 socket 几乎没有任何关系，只是叫法相似。
 -   正因为各个浏览器都支持 HTTP 协 议，所以 WebSocket 会先利用 HTTP 协议加上一些特殊的 header 头进行握手升级操作，升级成功后就跟 HTTP 没有任何关系了，之后就用 WebSocket 的数据格式进行收发数据。
+
+## HTTPS 各个版本握手的区别
+
+-   `HTTP` 标准的 tcp 连接，三次握手，四次挥手，然后发送明文数据
+    -   三次握手的主要原因是**为了防止旧的重复连接初始化造成混乱**
+-   `TLS1.2 RSA`
+    -   有 4 次握手，2 个 RTT
+    -   第二次握手是，服务端返回证书公钥，**客户端使用服务端的证书公钥加密 pre-master**，服务端使用自己的私钥解密得到 pre-master，然后双方使用 Client Random、Server Random、pre-master 生成 Master Secret(会话密钥)，用于对后续的 HTTP 请求/响应的数据加解密（对称加密）
+    -   RSA 密钥协商算法的最大问题是不支持前向保密，如果服务端的私钥泄漏，那么之前的所有通信都会被破解
+-   `TLS1.2 ECDHE`
+    -   可以只有 3 次握手，**客户端可以不用等服务端的最后一次 TLS 握手，就可以提前发出加密的 HTTP 数据**，TLS 握手的消息往返由 2 RTT 减少到 1 RTT
+    -   第二次握手时，服务端返回的证书只做验证作用，不会用于加密
+    -   第 2、3 次握手，客户端和服务端交换 ECDHE 算法公钥（椭圆曲线公钥），然后用 Client Random、Server Random、ECDHE 算法算出的共享密钥生成会话密钥
+-   `TLS1.3`
+    -   TLS 1.3 **把 Hello 和公钥交换这两个消息合并成了一个消息**，这样就减少到只需 1 RTT 就能完成 TLS 握手
+-   `QUIC`
+    -   TTP/1 和 HTTP/2 协议，TCP 和 TLS 是分层的，先 TCP 握手，再 TLS 握手。**QUIC 内部包含了 TLS**，它在自己的帧会携带 TLS 里的“记录”，再加上 QUIC 使用的是 TLS 1.3，因此仅需 1 个 RTT 就可以「同时」完成建立连接与密钥协商，甚至在第二次连接的时候，应用数据包可以和 QUIC 握手信息（连接信息 + TLS 信息）一起发送，达到 0-RTT 的效果。
+
+时间对比：
+
+-   `HTTP` TCP 握手 = 1 RTT
+-   `TLS1.2 RSA` TCP + TLS 4 次握手 = 3 RTT
+-   `TLS1.2 ECDHE` TCP + TLS 3 次握手 = 2 RTT
+-   `TLS1.3` TCP + TLS 2 次握手 = 2 RTT
+-   `QUIC` UDP + TLS = 1 RTT，最优 0-RTT
