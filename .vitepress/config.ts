@@ -81,7 +81,7 @@ export default defineConfig({
         socialLinks: [{ icon: 'github', link: 'https://github.com/haovei/site' }],
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2020-present Henry',
+            copyright: 'Copyright © 2020-2024 Henry',
         },
         algolia: {
             appId: 'IMN8M7G4B1',
