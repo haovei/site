@@ -12,18 +12,16 @@ I am passionate about helping others by writing and sharing code, and I believe 
 
 ## Sponsors
 
--   [Github Sponsor](https://github.com/sponsors/haovei)
--   [Buy a coffee](https://buymeacoffee.com/haovei)
-
-### WeChat
-
-<img src="./assets/wechat.png" width="200" alt="微信 wechat" />
-
-### Alipay
-
-<img src="./assets/alipay.png" width="200" alt="支付宝 alipay" />
+| Platform        | Address                                                           |
+| --------------- | ----------------------------------------------------------------- |
+| Github Sponsors | https://github.com/sponsors/haovei                                |
+| Buy a coffee    | https://buymeacoffee.com/haovei                                   |
+| WeChat          | <img src="./assets/wechat.png" width="200" alt="微信 wechat" />   |
+| Alipay          | <img src="./assets/alipay.png" width="200" alt="支付宝 alipay" /> |
 
 ### Digital currency
 
--   BTC: bc1q2h45jt48frjdpkkyel65slug6fe3ra46kh8s30
--   ETH: 0x1574A1Fd9DdBfF07bb1484C2166799935be11B07
+| Platform | Address                                    |
+| -------- | ------------------------------------------ |
+| BTC      | bc1q2h45jt48frjdpkkyel65slug6fe3ra46kh8s30 |
+| ETH      | 0x1574A1Fd9DdBfF07bb1484C2166799935be11B07 |
