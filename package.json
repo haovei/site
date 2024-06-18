@@ -16,9 +16,9 @@
     },
     "devDependencies": {
         "unplugin-imagemin": "^0.5.18",
-        "vite-plugin-compression2": "^1.1.0",
-        "vitepress": "^1.1.4",
-        "vue": "^3.4.27"
+        "vite-plugin-compression2": "^1.1.1",
+        "vitepress": "^1.2.3",
+        "vue": "^3.4.29"
     },
     "dependencies": {
         "@giscus/vue": "^3.0.0"
