@@ -1,6 +1,8 @@
 {
     "cleanUrls": true,
-    "github": {
-        "ignore": ["gh-pages"]
+    "git": {
+        "deploymentEnabled": {
+            "gh-pages": false
+        }
     }
 }
