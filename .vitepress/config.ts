@@ -1,8 +1,7 @@
 import { defineConfig } from 'vitepress';
 import nav from './nav';
 import sidebar from './sidebar';
-import { compression } from 'vite-plugin-compression2';
-import imagemin from 'unplugin-imagemin/vite';
+import { imagetools } from 'vite-imagetools';
 
 export default defineConfig({
     lang: 'zh-CN',
@@ -14,22 +13,12 @@ export default defineConfig({
     outDir: 'dist',
     vite: {
         plugins: [
-            compression({
-                include: /\.(html|xml|css|json|js|mjs|woff2|svg)$/,
-                algorithm: 'brotliCompress',
-            }),
-            imagemin({
-                mode: 'squoosh',
-                beforeBundle: true,
-                compress: {
-                    webp: {
-                        quality: 90,
-                    },
-                },
-                conversion: [
-                    { from: 'png', to: 'webp' },
-                    { from: 'jpg', to: 'webp' },
-                ],
+            imagetools({
+                defaultDirectives: new URLSearchParams({
+                    format: 'avif',
+                    quality: '90',
+                    fit: 'cover',
+                }),
             }),
         ],
     },

@@ -74,7 +74,7 @@ nginx -s reload
 
 ## 3. 效果
 
-![quic + brotli 效果](assets/quic-brotli.png)
+![quic + brotli 效果](assets/quic-brotli.avif)
 
 ## 4. 其他事项
 
