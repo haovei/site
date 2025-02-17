@@ -5,6 +5,10 @@ export default {
             collapsible: true,
             items: [
                 {
+                    text: 'Vite/Vitepress 图片优化',
+                    link: '/technology/front-end/vite-image-optimization',
+                },
+                {
                     text: 'Bun 运行时的 EACCES 错误',
                     link: '/technology/front-end/bun-eacces',
                 },
