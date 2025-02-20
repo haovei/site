@@ -1,3 +1,4 @@
+import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vitepress';
 import nav from './nav';
 import sidebar from './sidebar';
@@ -28,6 +29,9 @@ export default defineConfig({
     markdown: {
         headers: {},
         externalLinks: { target: '_blank', rel: 'nofollow noopener noreferrer' },
+        image: {
+            lazyLoading: true,
+        },
     },
     head: [
         [
