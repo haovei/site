@@ -1,4 +1,4 @@
-# Vite/Vitepress 图片优化最佳实践
+# Vite/Vitepress 图片优化实践
 
 在现代前端开发中，图片资源优化对网站性能有着重要影响。本文将介绍如何在 Vite 项目中配置自动生成 AVIF 和 WebP 格式的图片。
 
@@ -77,6 +77,13 @@ function MyComponent() {
 ![alt text](assets/1.png)
 
 ## 注意事项
+
+以前 webp 图片兼容性比 avif 好很多。截止 202502 的 caniuse 数据：
+
+-   **webp**: 96.82%/87.35% (Global/China)
+-   **avif**: 94.59%/79.2% (Global/China)
+
+如果不太敏感老设备的页面，可以选择使用 avif 来作为图片展示。
 
 1. AVIF 格式目前并非所有浏览器都支持，需要做好降级处理
 2. 建议根据实际项目需求调整压缩质量参数
