@@ -22,6 +22,13 @@ export default defineConfig({
                 }),
             }),
         ],
+        server: {
+            host: '0.0.0.0', // 允许从任何 IP 访问
+            port: 5173, // 设置端口号
+            strictPort: true, // 如果端口被占用则报错
+            cors: true,
+            allowedHosts: true,
+        }
     },
     sitemap: {
         hostname: 'https://site.quteam.com',
@@ -74,7 +81,7 @@ export default defineConfig({
         socialLinks: [{ icon: 'github', link: 'https://github.com/haovei/site' }],
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2020-2024 Henry',
+            copyright: 'Copyright © 2020-2025 Henry',
         },
         algolia: {
             appId: 'IMN8M7G4B1',

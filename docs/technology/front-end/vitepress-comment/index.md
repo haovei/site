@@ -86,7 +86,7 @@ const { isDark } = useData();
 
 ### 3.2 引入 GiscusComment 组件
 
-在 `.vitepress/index.ts` 中引入 GiscusComment 组件
+在 `.vitepress/theme/index.ts` 中引入 GiscusComment 组件
 
 ```js
 import { h } from 'vue';
