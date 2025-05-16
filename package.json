@@ -1,6 +1,6 @@
 {
     "name": "site",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Henry's site",
     "main": "index.js",
     "repository": "git@github.com:haovei/site.git",
@@ -15,9 +15,9 @@
         "deploy": "rsync -avz --delete ./dist/ quserver:/data/app/site/"
     },
     "devDependencies": {
-        "vite-imagetools": "^7.0.5",
+        "vite-imagetools": "^7.1.0",
         "vitepress": "^1.6.3",
-        "vue": "^3.5.13"
+        "vue": "^3.5.14"
     },
     "dependencies": {
         "@giscus/vue": "^3.1.1"
