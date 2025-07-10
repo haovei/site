@@ -7,12 +7,11 @@
     "author": "Henry <haovei@gmail.com>",
     "type": "module",
     "license": "MIT",
-    "homepage": "https://site.quetam.com",
+    "homepage": "https://site.quteam.com",
     "scripts": {
         "dev": "vitepress dev",
         "build": "vitepress build",
-        "serve": "vitepress serve",
-        "deploy": "rsync -avz --delete ./dist/ quserver:/data/app/site/"
+        "serve": "vitepress serve"
     },
     "devDependencies": {
         "vite-imagetools": "^7.1.0",
