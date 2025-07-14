@@ -12,6 +12,9 @@ export default defineConfig({
     cleanUrls: true,
     srcDir: 'docs',
     outDir: 'dist',
+    router: {
+        prefetchLinks: false
+    },
     vite: {
         plugins: [
             imagetools({
