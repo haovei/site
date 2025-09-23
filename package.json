@@ -1,6 +1,6 @@
 {
     "name": "site",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Henry's site",
     "main": "index.js",
     "repository": "git@github.com:haovei/site.git",
@@ -14,9 +14,9 @@
         "serve": "vitepress serve"
     },
     "devDependencies": {
-        "vite-imagetools": "^7.1.0",
-        "vitepress": "^1.6.3",
-        "vue": "^3.5.17"
+        "vite-imagetools": "^8.0.0",
+        "vitepress": "^1.6.4",
+        "vue": "^3.5.21"
     },
     "dependencies": {
         "@giscus/vue": "^3.1.1"
