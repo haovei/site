@@ -71,7 +71,7 @@ export default {
             items: [
                 {
                     text: 'Take a Break',
-                    link: '/apps/take-a-break',
+                    link: '/apps/take-a-break/',
                 },
             ],
         },
