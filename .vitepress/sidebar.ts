@@ -63,6 +63,19 @@ export default {
             ],
         },
     ],
+    '/apps/': [
+        {
+            text: 'App List',
+            link: '/apps/',
+            collapsible: true,
+            items: [
+                {
+                    text: 'Take a Break',
+                    link: '/apps/take-a-break',
+                },
+            ],
+        },
+    ],
     // '/accumulation/': [
     //     {
     //         text: '学习积累',

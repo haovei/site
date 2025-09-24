@@ -1,5 +1,9 @@
 export default [
     {
+        text: 'Apps',
+        link: '/apps/',
+    },
+    {
         text: 'Front End',
         link: '/technology/front-end/',
     },
