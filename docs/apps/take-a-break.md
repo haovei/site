@@ -38,3 +38,7 @@ TakeABreak 常驻状态栏，按你的设置安静计时，到点自动弹出全
 ### 温馨提示
 
 TakeABreak 旨在帮助你定时休息与放松，不提供医疗建议。
+
+### 支持与政策
+
+- 隐私政策：见[《隐私政策（Privacy Policy）》](./privacy-policy)
