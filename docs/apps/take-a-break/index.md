@@ -42,4 +42,5 @@
 
 ## 支持与政策
 
--   隐私政策：见[《隐私政策（Privacy Policy）》](./privacy-policy)
+-   用户协议：[《用户协议》](./terms-of-service)
+-   隐私政策：[《隐私政策》](./privacy-policy)
