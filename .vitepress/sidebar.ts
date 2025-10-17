@@ -71,7 +71,17 @@ export default {
             items: [
                 {
                     text: 'Take a Break',
-                    link: '/apps/take-a-break/',
+                    link: '/apps/take-a-break/index.en',
+                    items: [
+                        {
+                            text: 'English',
+                            link: '/apps/take-a-break/index.en',
+                        },
+                        {
+                            text: '中文',
+                            link: '/apps/take-a-break/index.zh',
+                        },
+                    ],
                 },
             ],
         },
