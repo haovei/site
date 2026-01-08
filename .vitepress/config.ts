@@ -19,7 +19,7 @@ export default defineConfig({
         plugins: [
             imagetools({
                 defaultDirectives: new URLSearchParams({
-                    format: 'webp',
+                    format: 'avif',
                     quality: '90',
                     fit: 'cover',
                 }),

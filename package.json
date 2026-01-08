@@ -14,9 +14,9 @@
         "serve": "vitepress serve"
     },
     "devDependencies": {
-        "vite-imagetools": "^8.0.0",
+        "vite-imagetools": "^9.0.2",
         "vitepress": "^1.6.4",
-        "vue": "^3.5.21"
+        "vue": "^3.5.26"
     },
     "dependencies": {
         "@giscus/vue": "^3.1.1"
